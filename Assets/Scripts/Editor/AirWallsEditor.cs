@@ -133,7 +133,7 @@ public class AirWallsEditor : Editor
                         MeshFilter filter = child.gameObject.AddComponent<MeshFilter>();
                         filter.sharedMesh = cube.GetComponent<MeshFilter>().sharedMesh;
                         MeshRenderer render = child.gameObject.AddComponent<MeshRenderer>();
-                        render.sharedMaterial = _collideMain.GetComponent<ParticleSystem>().renderer.sharedMaterial;
+                        render.sharedMaterial = _collideMain.GetComponent<Renderer>().sharedMaterial;
                     }
                     else
                     {
